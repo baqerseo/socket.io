@@ -1656,11 +1656,11 @@
   if (withEventListeners) {
     // within a ServiceWorker, any event handler for the 'offline' event must be added on the initial evaluation of the
     // script, so we create one single event listener here which will forward the event to the socket instances
-    addEventListener("offline", function () {
-      OFFLINE_EVENT_LISTENERS.forEach(function (listener) {
-        return listener();
-      });
-    }, false);
+    // addEventListener("offline", function () {
+    //   OFFLINE_EVENT_LISTENERS.forEach(function (listener) {
+    //     return listener();
+    //   });
+    // }, false);
   }
   /**
    * This class provides a WebSocket-like interface to connect to an Engine.IO server. The connection will be established
