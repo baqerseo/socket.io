@@ -1767,14 +1767,14 @@
           };
           addEventListener("beforeunload", _this._beforeunloadEventListener, false);
         }
-        if (_this.hostname !== "localhost") {
-          _this._offlineEventListener = function () {
-            _this._onClose("transport close", {
-              description: "network connection lost"
-            });
-          };
-          OFFLINE_EVENT_LISTENERS.push(_this._offlineEventListener);
-        }
+        // if (_this.hostname !== "localhost") {
+        //   _this._offlineEventListener = function () {
+        //     _this._onClose("transport close", {
+        //       description: "network connection lost"
+        //     });
+        //   };
+        //   OFFLINE_EVENT_LISTENERS.push(_this._offlineEventListener);
+        // }
       }
       if (_this.opts.withCredentials) {
         _this._cookieJar = createCookieJar();
